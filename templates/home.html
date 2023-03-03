@@ -1,0 +1,8 @@
+<h1>Images List</h1>
+
+<ul>
+  {% for posts in object_list %}
+    <h2>{{ posts.title }}</h2>
+    <img src="{{ posts.image.url}}" alt="{{ posts.title }}">
+  {% endfor %}
+</ul>
